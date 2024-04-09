@@ -31,15 +31,15 @@
       <!-- header -->
       <div class="header-container">
         <header class="container flex-center header">
-          <div class="flex-center navbar-icon-container">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-
           <div class="flex-center logo-container">
             <img src="./assets/samson.jpg" alt="samson ameh" />
           </div>
 
-          <nav class="nav-container" style="display: none">
+          <div class="flex-center navbar-icon-container">
+            <i class="fa-solid fa-bars menu-btn"></i>
+          </div>
+
+          <nav class="nav-container">
             <a href="#">Home</a>
             <a href="#about">About</a>
             <a href="#portfolio">Portfolio</a>
@@ -216,7 +216,7 @@
 
       <!-- contact -->
 
-      <section id="contact" class="contact-wrapper">
+      <section id="contact" class="section contact-wrapper">
         <div class="container">
           <div class="gallery-title-container">
             <span class="sub-text-one">Memory Snippets</span>
@@ -235,7 +235,7 @@
               <label for="message">Message:</label>
               <textarea id="message" name="message" required></textarea>
             </div>
-            <div class="form-group">
+            <div class="flex-center sendMessage">
               <button class="btn" type="submit">Send Message</button>
             </div>
           </form>

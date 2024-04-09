@@ -1,24 +1,14 @@
-const projectCards = document.querySelector(".project-cards");
-const prevBtn = document.querySelector(".prev-btn");
-const nextBtn = document.querySelector(".next-btn");
+// javascript
 
-let cardIndex = 0;
+const menuBtn = document.querySelector(".menu-btn");
+menu = document.querySelector(".nav-container");
+exitBtn = document.querySelector(".exit-btn");
 
-function showCard(index) {
-  const cardWidth = projectCards.children[0].offsetWidth;
-  projectCards.style.transform = `translateX(-${index * cardWidth}px)`;
-}
+let isOpen = false;
 
-prevBtn.addEventListener("click", () => {
-  if (cardIndex > 0) {
-    cardIndex--;
-    showCard(cardIndex);
-  }
-});
-
-nextBtn.addEventListener("click", () => {
-  if (cardIndex < projectCards.children.length - 1) {
-    cardIndex++;
-    showCard(cardIndex);
-  }
+menuBtn.addEventListener("click", () => {
+  isOpen
+    ? (menu.style.transform = "translateY(-100%)")
+    : (menu.style.transform = "translateY(0)");
+  isOpen = !isOpen;
 });
