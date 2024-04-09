@@ -72,7 +72,7 @@ img {
 
 .heading-three {
   font-size: 1.875rem;
-  margin-block: 2em;
+  margin-block: 1em;
 }
 
 .sub-text-one {
@@ -190,12 +190,14 @@ img {
 /* about */
 
 .about-title-container,
-.portfolio-title-container {
+.portfolio-title-container,
+.gallery-title-container {
   text-align: center;
 }
 
 .about-title-container > span,
-.portfolio-title-container > span {
+.portfolio-title-container > span,
+.gallery-title-container > span {
   color: var(--accent);
 }
 
@@ -204,10 +206,77 @@ img {
   display: grid;
 }
 
-.left-about-image-container {
+.left-about-image-container,
+.portfolio-card {
   max-width: 380px;
   border-radius: 2em;
   overflow: hidden;
+}
+
+.download-cv {
+  justify-content: start;
+}
+
+/* portfolio */
+
+.portfolio-section {
+  background: var(--primary);
+}
+
+.portfolio-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  place-items: center;
+}
+
+.card-des {
+  background: var(--accent);
+  color: var(--primary);
+  padding: 1em;
+}
+
+.card-des h3 {
+  margin: 0;
+}
+
+.portfolio-links {
+  background: var(--primary);
+
+  display: inline-block;
+  margin-top: 0.9em;
+}
+
+/* gallery */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.gallery-item {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.gallery-item.large {
+  grid-row: span 2;
+}
+
+.gallery-item.tall {
+  grid-row: span 3;
 }
 
 /* footer */
