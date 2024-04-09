@@ -3,6 +3,7 @@ menu = document.querySelector(".nav-container");
 navLinks = document.querySelectorAll(".nav-container a");
 projectContainer = document.querySelector(".portfolio-card-container");
 
+// navigation
 let isOpen = false;
 
 menuBtn.addEventListener("click", () => {

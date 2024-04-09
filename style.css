@@ -141,7 +141,6 @@ img {
   animation: float 3s ease-in-out infinite;
 }
 
-.form-group,
 .portfolio-card,
 .sendMessageBtn {
   animation: float2 3s ease-in-out infinite;
@@ -403,6 +402,7 @@ nav a {
 
 .form-group textarea {
   height: 120px;
+  resize: none;
 }
 
 .sendMessage {
@@ -477,13 +477,13 @@ nav a {
   }
 
   .nav-container {
-    transform: translateY(0);
+    transform: translateY(0) !important;
     width: unset;
     background: none;
     display: flex;
     padding-top: 1em;
     padding-bottom: 0;
-    position: unset;
+    position: relative;
     height: auto;
   }
 
