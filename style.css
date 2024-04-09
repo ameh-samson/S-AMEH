@@ -126,6 +126,7 @@ img {
   left: 0;
   width: 100%;
   z-index: 10;
+  box-shadow: 0 8px 8px #0000001a;
 }
 
 .header {
@@ -272,9 +273,13 @@ nav a {
   place-items: center;
 }
 
+.portfolio-card {
+  box-shadow: 0 8px 8px #0000001a;
+}
+
 .card-des {
-  background: #020b17;
-  color: var(--secondary);
+  background: var(--accent);
+  color: var(--primary);
   padding: 1em;
 }
 
