@@ -142,7 +142,8 @@ img {
 }
 
 .form-group,
-.portfolio-card {
+.portfolio-card,
+.sendMessageBtn {
   animation: float2 3s ease-in-out infinite;
 }
 
