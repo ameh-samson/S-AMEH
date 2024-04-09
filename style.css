@@ -25,6 +25,11 @@ p {
   margin: 0;
 }
 
+ul,
+li {
+  list-style: none;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -36,15 +41,20 @@ img {
   object-fit: cover;
 }
 
-.container {
-  width: 90%;
-  margin: 0 auto;
-  padding: 1.2em;
-}
-
+/* GENERAL */
 .section {
   padding-block: 3em;
 }
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+/* REUSABLE VARIABLES */
+
+/* typography */
 
 .heading-one {
   font-size: 3.13rem;
@@ -54,6 +64,17 @@ img {
   margin-top: 1em;
 }
 
+.heading-two {
+  font-size: 1.813rem;
+  color: var(--absolute);
+  margin-block: 1em;
+}
+
+.heading-three {
+  font-size: 1.875rem;
+  margin-block: 2em;
+}
+
 .sub-text-one {
   font-size: 1.06rem;
   color: var(--absolute);
@@ -61,6 +82,7 @@ img {
   margin-top: 1em;
 }
 
+/* button */
 .btn {
   font-weight: 500;
   padding: 0.6em 1.4em;
@@ -77,8 +99,6 @@ img {
   color: var(--primary);
 }
 
-/* variables */
-
 .flex-center {
   display: flex;
   justify-content: center;
@@ -88,6 +108,8 @@ img {
 .text-center {
   text-align: center;
 }
+
+/* ****************************************8 */
 
 .wrapper {
   color: var(--secondary);
@@ -167,16 +189,19 @@ img {
 
 /* about */
 
-.about-title-container {
+.about-title-container,
+.portfolio-title-container {
   text-align: center;
 }
 
-.about-title-container > span {
+.about-title-container > span,
+.portfolio-title-container > span {
   color: var(--accent);
 }
 
 .inner-wrapper {
   margin-top: 3em;
+  display: grid;
 }
 
 .left-about-image-container {
@@ -185,12 +210,23 @@ img {
   overflow: hidden;
 }
 
+/* footer */
+
+.footer-wrapper {
+  background: var(--primary);
+  color: var(--secondary);
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 768px) {
   .heading-one {
     font-size: 4.06rem;
     margin-top: 0;
+  }
+
+  .heading-two {
+    font-size: 2.059rem;
   }
 
   .sub-text-one {
@@ -224,6 +260,14 @@ img {
     font-size: 4.688rem;
   }
 
+  .heading-two {
+    font-size: 2.5rem;
+  }
+
+  .heading-three {
+    margin-block: 0 2rem;
+  }
+
   .sub-text-one {
     font-size: 1.25rem;
   }
@@ -231,5 +275,19 @@ img {
   .right-main-content .image-container {
     max-width: 400px;
     max-height: 400px;
+  }
+
+  /* about */
+  .inner-wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left right";
+  }
+
+  .left-about-content {
+    grid-area: left;
+  }
+
+  .right-about-content {
+    grid-area: right;
   }
 }
