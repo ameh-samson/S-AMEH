@@ -265,8 +265,8 @@ img {
 }
 
 .gallery-item {
-  object-fit: cover;
-  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
   height: auto;
   animation: fadeIn 0.5s ease forwards;
 }
@@ -277,6 +277,46 @@ img {
 
 .gallery-item.tall {
   grid-row: span 3;
+}
+
+/* contact */
+
+.contact-wrapper {
+  background: var(--primary);
+}
+
+.contact-form {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+}
+
+.form-group > input,
+.form-group > textarea {
+  outline: none;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background: var(--secondary);
+}
+
+.form-group textarea {
+  height: 120px;
 }
 
 /* footer */
