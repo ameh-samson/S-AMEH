@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Gaming Haven",
+    "image": "./assets/Gaming-Haven.jpg",
+    "link": "https://gaming-haven.vercel.app/",
+    "githubLink": "https://github.com/ameh-samson/Gaming-Haven"
+  },
+  {
+    "name": "YIP Online",
+    "image": "./assets/project2.jpg",
+    "liveLink": "https://yiponline-chi.vercel.app/",
+    "githubLink": "https://github.com/ameh-samson/yiponline"
+  },
+  {
+    "name": "Meal Mingle",
+    "image": "./assets/Meal-Mingle.jpg",
+    "liveLink": "https://meal-mingle.vercel.app/",
+    "githubLink": "https://github.com/ameh-samson/MealMingle"
+  },
+
+  {
+    "name": "Quote Generator",
+    "image": "./assets/Quote-generator.jpg",
+    "liveLink": "https://quote-generator-machine.vercel.app/",
+    "githubLink": "https://github.com/ameh-samson/quote-generator-machine"
+  }
+]
