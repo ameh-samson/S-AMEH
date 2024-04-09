@@ -1,5 +1,6 @@
 const menuBtn = document.querySelector(".menu-btn");
 menu = document.querySelector(".nav-container");
+navLinks = document.querySelectorAll(".nav-container a");
 projectContainer = document.querySelector(".portfolio-card-container");
 
 let isOpen = false;
@@ -9,6 +10,14 @@ menuBtn.addEventListener("click", () => {
     ? (menu.style.transform = "translateY(-100%)")
     : (menu.style.transform = "translateY(0)");
   isOpen = !isOpen;
+});
+
+// Add click event listener to each link
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    menu.style.transform = "translateY(-100%)";
+    isOpen = false;
+  });
 });
 
 // create project card
@@ -36,9 +45,9 @@ fetch("project.json")
   .then((response) => response.json())
   .then((data) => {
     const projectCardsHTML = data.map(createProjectCard).join("");
-    // Append project cards HTML to the container
+
     projectContainer.innerHTML = projectCardsHTML;
   })
   .catch((error) => {
-    console.error("Error fetching projects:", error);
+    console.error("Error fetching project:", error);
   });
