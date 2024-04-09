@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
 
@@ -24,70 +24,152 @@
     <!-- style link -->
     <link rel="stylesheet" href="style.css" />
 
-    <title>Samson Ameh</title>
+    <title>Samson</title>
   </head>
   <body>
-    <div class="main-wrapper">
-      <div>
-        <div class="white-gradient"></div>
-
-        <!-- header section -->
-        <section class="h-wrapper">
-          <header class="flex-center container h-container">
-            <div class="flex-center navbar-icon-container">
-              <i class="fa-solid fa-bars"></i>
-            </div>
-
-            <div class="logo-container">
-              <img src="./assets/samson.jpg" alt="samson ameh" />
-            </div>
-
-            <div class="flex-center nav-container" style="display: none">
-              <a href="#">Home</a>
-              <a href="#about">About</a>
-              <a href="#portfolio">Portfolio</a>
-              <a href="#cv">CV</a>
-              <a href="#contact">Contact</a>
-            </div>
-          </header>
-        </section>
-
-        <!-- hero section -->
-        <section class="flex-center container hero-section">
-          <!-- left side -->
-          <div class="flex-col-start l-side">
-            <div class="top">
-              <div class="flex-col-start hero-des">
-                <span class="secondary-text">Hi I am</span>
-                <span class="secondary-text">Samson Ameh</span>
-                <h1>
-                  Frontend <br />
-                  Developer
-                </h1>
-              </div>
-
-              <div class="social-links">
-                <a href=""><i class="fa-brands fa-github"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-              </div>
-
-              <div class="cta">
-                <a href="#portfolio">Portfolio</a>
-                <a href="">Download CV</a>
-              </div>
-            </div>
+    <div class="wrapper">
+      <!-- header -->
+      <div class="header-container">
+        <header class="container flex-center header">
+          <div class="flex-center navbar-icon-container">
+            <i class="fa-solid fa-bars"></i>
           </div>
 
-          <!-- right side -->
-          <div class="l-side">
-            <div class="image-container">
-              <img src="./assets/hero-img.png" alt="" />
-            </div>
+          <div class="flex-center logo-container">
+            <img src="./assets/samson.jpg" alt="samson ameh" />
           </div>
-        </section>
+
+          <nav class="nav-container" style="display: none">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#cv">CV</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </header>
       </div>
+
+      <!-- main/hero -->
+
+      <main class="flex-center section main-section main-wrapper">
+        <div class="container main">
+          <div class="left-main-content">
+            <h3 class="heading-one text-center">
+              Samson <span style="color: var(--accent)">Ameh</span>
+            </h3>
+            <p class="sub-text-one text-center job">
+              Frontend Developer <br />
+              based in Lagos State, Nigeria
+            </p>
+
+            <div class="flex-center cta-container">
+              <a href="#" class="btn cta">Get Connected</a>
+            </div>
+          </div>
+
+          <div class="right-main-content">
+            <div class="image-container">
+              <img src="./assets/samson.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- about -->
+
+      <section class="section about-section section-wrapper">
+        <div class="container about">
+          <div class="about-title-container">
+            <span class="sub-text-one">About Me</span>
+            <h3 class="sub-text-one">
+              A Passionate Developer Who Loves to Code
+            </h3>
+          </div>
+
+          <div class="inner-wrapper">
+            <div class="left-about-content left-about-image-container">
+              <img src="./assets/samson.jpg" alt="" />
+            </div>
+
+            <div class="right">
+              <h3 class="title">About Me</h3>
+              <p>
+                Hello! I'm Samson Ameh, a passionate and dedicated frontend
+                developer. I have a strong foundation in
+                <span>HTML, CSS, and JavaScript, React</span> and I specialize
+                in building responsive and user-friendly web applications.
+                <br />
+
+                My journey into the world of web development started with a
+                genuine curiosity and has grown into a love for creating
+                beautiful and functional user interfaces. I enjoy the process of
+                turning ideas into reality and constantly strive to enhance my
+                skills in the ever-evolving field of frontend development.
+              </p>
+
+              <div class="list">
+                <ul>
+                  <li>
+                    <ul>
+                      <li>
+                        <span>Name</span>
+                        <p>Samson Ameh</p>
+                      </li>
+                      <li>
+                        <span>Email</span>
+                        <p>amehsam69@gmail.com</p>
+                      </li>
+                      <li>
+                        <span>Phone</span>
+                        <p>+2348165530462</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <ul>
+                      <li>
+                        <span>Address</span>
+                        <p>Lagos, Nigeria</p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="button-container">
+                <a href="" class="btn download-cv"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- portfolio -->
+
+      <section class="section portfolio-section portfolio-wrapper">
+        <div class="container portfolio-container">
+          <div class="title">
+            <span>Portfolio</span>
+            <h3>What I Do for My Clients</h3>
+          </div>
+
+          <div class="portfolio-container">
+            <div class="portfolio">
+              <div class="image">
+                <img src="./assets/hero-img.jpeg" alt="" />
+              </div>
+
+              <div class="details">
+                <h3>Game Haven</h3>
+                <a href=""><span>Live Site</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact -->
     </div>
   </body>
 </html>
