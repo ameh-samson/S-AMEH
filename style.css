@@ -110,7 +110,46 @@ img {
   text-align: center;
 }
 
-/* ****************************************8 */
+/* animation */
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes float2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(-5deg);
+  }
+}
+
+.btn,
+.right-main-content,
+.left-about-image-container,
+.left-main-content,
+.contact-form {
+  animation: float 3s ease-in-out infinite;
+}
+
+.right-about-content,
+.portfolio-card {
+  animation: float2 3s ease-in-out infinite;
+}
+
+/* **************************************** */
 
 .wrapper {
   color: var(--secondary);
@@ -127,6 +166,8 @@ img {
   width: 100%;
   z-index: 10;
   box-shadow: 0 8px 8px #0000001a;
+
+  animation: slideIn 0.5s ease forwards;
 }
 
 .header {
