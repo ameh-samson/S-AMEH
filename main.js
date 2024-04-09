@@ -2,6 +2,7 @@ const menuBtn = document.querySelector(".menu-btn");
 menu = document.querySelector(".nav-container");
 navLinks = document.querySelectorAll(".nav-container a");
 projectContainer = document.querySelector(".portfolio-card-container");
+copyrightEl = document.querySelector(".footer-container");
 
 // navigation
 let isOpen = false;
@@ -52,3 +53,7 @@ fetch("project.json")
   .catch((error) => {
     console.error("Error fetching project:", error);
   });
+
+// date function
+const currentYear = new Date().getFullYear();
+copyrightEl.innerHTML = `<p class="secondary-text">&copy;${currentYear} SAMSON AMEH</p>`;
