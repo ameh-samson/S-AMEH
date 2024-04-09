@@ -251,7 +251,7 @@ nav a {
 .left-about-image-container,
 .portfolio-card {
   max-width: 380px;
-  border-radius: 2em;
+  border-radius: 1em;
   overflow: hidden;
 }
 
@@ -273,8 +273,8 @@ nav a {
 }
 
 .card-des {
-  background: var(--accent);
-  color: var(--primary);
+  background: #020b17;
+  color: var(--secondary);
   padding: 1em;
 }
 
